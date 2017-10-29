@@ -1,5 +1,9 @@
 package threads1;
 
+//Por la api de java se sabe que tengo que crear una Clase que implemente la Interfaz Runnable
+//La cual me obliga a sobreescribir el metodo run() que sera el encargado de ejecutarse en cada
+//instancia de un objeto del tipo Thread
+
 public final class ForThreads implements Runnable {
 
 	private For f;
