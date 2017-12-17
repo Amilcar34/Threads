@@ -13,21 +13,25 @@ public final class Test {
 
 		inicio(0);
 		
-		inicio(3);
+		inicio(2);
 		
-		inicio(6);
+		inicio(4);
+		
+		inicio(0);
+		
+		inicio(2);
 
 	}
 
 	private static void inicio(int num) {
 
 		For n = new For(num);
-		
 		System.out.println("----->" + n.getNumero());
 
  //  Por la api de java de que 
 		//tengo que crear un objeto del tipo Runnable con la instancia d ela clase que lo implementa
-		//luego se crea un objeto del tipo Thread al cual se le pasa por paramento a su constructor el objeto del tipo Runnable		
+		//luego se crea un objeto del tipo Thread 
+		//al cual se le pasa por paramento a su constructor el objeto del tipo Runnable		
 		//se instancia al objeto con el metodo start() que ejecuta el metodo run() 
 		//(En este caso el metodo esta en la clase ForThreads)
  

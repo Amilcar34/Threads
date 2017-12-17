@@ -4,7 +4,7 @@ package threads1;
 //La cual me obliga a sobreescribir el metodo run() que sera el encargado de ejecutarse en cada
 //instancia de un objeto del tipo Thread
 
-public final class ForThreads implements Runnable {
+public final class ForThreads extends Thread {
 
 	private For f;
 
@@ -14,18 +14,11 @@ public final class ForThreads implements Runnable {
 
 	@Override
 	public void run() {
-
-		System.out.println("-->" + f.getNumero());
-		
-		for (int j = f.getNumero(); j < 8; j++) {
-
-			try {
-				Thread.sleep(1000);
-			
-			} catch (InterruptedException e) {}
-			
-			System.out.println(j);
+		for (int i = f.getNumero(); i < 15; i++) {
+			System.out.print(i + " ");
 		}
+		System.out.println();
 	}
+
 
 }
